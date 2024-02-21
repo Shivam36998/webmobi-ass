@@ -26,7 +26,8 @@ function App() {
         const url = await getDownloadURL(val);
         all.push(url);
       }
-      let items = JSON.parse(window.localStorage.getItem("webmobi"));
+      console.log("sdl");
+      let items = JSON.parse(window.localStorage.getItem("webmobi")) || [];
       let final = items.filter((item) => all.find((one) => one == item));
       setList(final);
       setError("😔 OOPs! nothing to show! Click on add button to add new...");

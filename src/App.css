@@ -26,6 +26,8 @@
   justify-content: center;
   color: #7368aa;
   font-size: 2rem;
+  width: 100%;
+  padding: 2rem;
 }
 .addButton {
   position: fixed;
