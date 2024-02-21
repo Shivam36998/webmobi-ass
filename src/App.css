@@ -16,9 +16,7 @@
   justify-content: center;
   gap: 5px;
   img {
-    max-width: 100%;
-    min-width: 45%;
-    /* max-height: 125px; */
+    max-height: 125px;
   }
 }
 .addButton {
