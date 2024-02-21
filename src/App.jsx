@@ -29,7 +29,7 @@ function App() {
       let items = JSON.parse(window.localStorage.getItem("webmobi"));
       let final = items.filter((item) => all.find((one) => one == item));
       setList(final);
-      console.log(final);
+      setError("😔 OOPs! nothing to show! Click on add button to add new...");
     } catch (error) {
       window.href = "";
     }
@@ -71,7 +71,7 @@ function App() {
             ))}
           </ReactSortable>
         ) : (
-          <div>{error}</div>
+          <div className="error">{error}</div>
         )}
 
         <form action="">
