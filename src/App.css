@@ -65,6 +65,9 @@
 }
 
 @media screen and (max-width: 450px) {
+  .page{
+    padding: 12px;
+  }
   .image img {
     max-height: 125px;
   }
